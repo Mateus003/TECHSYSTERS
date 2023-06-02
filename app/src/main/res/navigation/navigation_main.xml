@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/page_home">
+    <fragment
+        android:id="@+id/page_home"
+        android:name="com.example.test.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_page_home_to_chooseMentorFragment"
+            app:destination="@id/chooseMentorFragment">
+            <argument
+                android:name="BOTAO_CLICADO"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/page_search"
+        android:name="com.example.test.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_page_search_to_chooseMentorFragment"
+            app:destination="@id/chooseMentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_profile"
+        android:name="com.example.test.ui.fragments.ProfilePrivateFragment"
+        android:label="fragment_profile_private"
+        tools:layout="@layout/fragment_profile_private" >
+        <action
+            android:id="@+id/action_page_profile_to_chooseMentorFragment"
+            app:destination="@id/chooseMentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseMentorFragment"
+        android:name="com.example.test.ui.fragments.ChooseMentorFragment"
+        android:label="fragment_choose_mentor"
+        tools:layout="@layout/fragment_choose_mentor" >
+        <action
+            android:id="@+id/action_chooseMentorFragment_to_profileMentorFragment"
+            app:destination="@id/profileMentorFragment" />
+        <action
+            android:id="@+id/action_chooseMentorFragment_to_page_home"
+            app:destination="@id/page_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileMentorFragment"
+        android:name="com.example.test.ui.fragments.ProfileMentorFragment"
+        android:label="fragment_profile_mentor"
+        tools:layout="@layout/fragment_profile_mentor" >
+        <action
+            android:id="@+id/action_profileMentorFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_profileMentorFragment_self"
+            app:destination="@id/profileMentorFragment" />
+        <action
+            android:id="@+id/action_profileMentorFragment_to_chooseMentorFragment"
+            app:destination="@id/chooseMentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.test.ui.fragments.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_page_home"
+            app:destination="@id/page_home" />
+        <action
+            android:id="@+id/action_calendarFragment_to_profileMentorFragment"
+            app:destination="@id/profileMentorFragment" />
+    </fragment>
+
+
+</navigation>

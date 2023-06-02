@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, "
+        android:textSize="35sp"
+        android:textColor="#2D3648"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#2D3648"
+        android:textSize="35sp"
+        android:text="Juliana"
+        app:layout_constraintStart_toEndOf="@+id/text_hello"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_hello_plataform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem vinda a área tech!"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hello" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/picture_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hello_plataform" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha a área de interesse."
+        android:layout_marginStart="20dp"
+        android:textSize="19.5sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <LinearLayout
+        android:id="@+id/back_and_front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_option">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/option_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#A226C5"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight="1"
+            android:text="Front-End"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/option_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#001D9F"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Back-End"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/option_data_and_design"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/back_and_front"
+        tools:layout_editor_absoluteX="15dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option_data"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:text="Dados"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="25dp"
+            android:textColor="#001D9F"
+            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/bg_option_data" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option_design"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="#ECE8EF"
+            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/bg_option_design"
+            android:text="Design\nUI/UX" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

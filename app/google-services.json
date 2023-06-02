@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "32845009191",
+    "project_id": "techsysters",
+    "storage_bucket": "techsysters.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32845009191:android:e4c170dd0e6e91aea69902",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5paOCx6leTwnJZmscroT3u0MPfaw1lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

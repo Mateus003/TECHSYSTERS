@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="50dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginActivity">
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="@+id/form_login"
+        app:layout_constraintStart_toStartOf="@+id/form_login"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/form_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:text="E-mail"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_acess"
+            android:layout_below="@id/materialTextView"
+            android:layout_centerHorizontal="true"
+  />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:text="Senha"
+            android:layout_below="@id/edit_text_email"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_acess"
+            android:inputType="textPassword"
+
+            android:layout_below="@id/text_password"
+            android:layout_centerHorizontal="true"
+           />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Esqueceu sua senha? Clique aqui"
+            android:layout_below="@id/edit_text_password"
+            android:layout_centerHorizontal="true"
+           />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acessar"
+            android:textColor="#ECE8EF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="45dp"
+            android:layout_below="@id/text_recover"
+            android:background="@drawable/bg_button_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+
+        <TextView
+            android:id="@+id/text_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_access"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:textColor="#2D3648"
+            android:text="Cadastrar, clique aqui" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
