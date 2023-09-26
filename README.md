@@ -74,7 +74,7 @@ Henrique Rocha — Gestor de Negócios  [![LINKEDIN](https://img.shields.io/badg
 
 Maiara Lira — Desenvolvedora Back-end [![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maiaraslira/)
 
-Mateus Olegario — Desenvolvedora Mobile  [![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateussilva-dev/) 
+Mateus Olegario — Desenvolvedor Mobile  [![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateussilva-dev/) 
 
 
 
